@@ -70,28 +70,8 @@ Users_changes = ReplyKeyboardMarkup(keyboard=[
                            input_field_placeholder='Выберите пункт меню.')
 
 lessons = ReplyKeyboardMarkup(keyboard=[
-    [KeyboardButton(text='Русский Язык'),
-     KeyboardButton(text='Литература'),
-    ],
-    [KeyboardButton(text='АнглДА'),
-     KeyboardButton(text='АнглКА'),
-    ],
-    [KeyboardButton(text='Алгебра'),
-     KeyboardButton(text='Геометрия'),
-    ],
-    [KeyboardButton(text='Физика'),
-     KeyboardButton(text='История'),
-    ],
-    [KeyboardButton(text='Общество'),
-     KeyboardButton(text='Химия'),
-    ],
-    [KeyboardButton(text='ОБЖ'),
-     KeyboardButton(text='Информатика'),
-    ],
-    [KeyboardButton(text='Биология'),
-     KeyboardButton(text='География'),
-    ],
-    [KeyboardButton(text='Отмена')
+    [KeyboardButton(text='Веб-разработка'),
+     KeyboardButton(text='менеджмент'),
     ],
     
 ],
