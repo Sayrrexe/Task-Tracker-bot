@@ -8,6 +8,7 @@
 	git clone https://github.com/Sayrrexe/Task-Tracker-bot.git
 	```
 2. Создать Виртуальное окружение и скачать нужные библиотеки
+
 		```	
 		# Windows
 		python -m venv .venv
