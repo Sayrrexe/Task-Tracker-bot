@@ -52,7 +52,7 @@ info = ReplyKeyboardMarkup(keyboard=[
 inline_main = InlineKeyboardMarkup(inline_keyboard=[
     [InlineKeyboardButton(text='В меню',callback_data='menu')],
 ])
-dz_changes = ReplyKeyboardMarkup(keyboard=[
+tasks_changes = ReplyKeyboardMarkup(keyboard=[
     [KeyboardButton(text='Все задачи')],
     [KeyboardButton(text='Удалить Задачу.')],
     [KeyboardButton(text='Панель')]
@@ -116,7 +116,7 @@ async def show_lesson():
     keyboard.add(KeyboardButton(text='Панель'))
     return keyboard.adjust(1).as_markup(resize_keyboard=True)
 
-admin_check_dz = ReplyKeyboardMarkup(keyboard=[
+admin_check_tasks = ReplyKeyboardMarkup(keyboard=[
     [KeyboardButton(text='Удалить задачу')]
 ],
                            resize_keyboard=True,

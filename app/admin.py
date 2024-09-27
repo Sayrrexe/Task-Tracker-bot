@@ -83,11 +83,11 @@ async def def_pol(message: Message):
         await message.reply(f"Произошла ошибка: {error_message[:4000]}")
         
 @admin_router.message(AdminProtect(), F.text == 'Задачи')
-async def dz_changes_def(message: Message):
-    await message.answer('Выберите задачу', reply_markup=kb.dz_changes)
+async def tasks_changes_def(message: Message):
+    await message.answer('Выберите задачу', reply_markup=kb.tasks_changes)
         
 @admin_router.message(AdminProtect(), F.text == 'Удалить Задачу.')
-async def def_check_dz_admin(message: Message, state: FSMContext):
+async def def_check_tasks_admin(message: Message, state: FSMContext):
     await message.answer('Выберите нужную задачу', reply_markup=await kb.show_lesson())
     await state.set_state(show_lessons.show_ll)
     
@@ -102,7 +102,7 @@ async def cmd_show_lesson(message: Message, state: FSMContext):
         await state.clear()
         
 @admin_router.message(AdminProtect(), F.text == 'Все задачи')
-async def all_dz_cmd_for_admin(message: Message):
+async def all_tasks_cmd_for_admin(message: Message):
     list = await get_all_tasks()
     tasks = []
     for hw in list:

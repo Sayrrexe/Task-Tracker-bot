@@ -16,13 +16,13 @@ async def cmd_start(message: Message, state: FSMContext):
 @handlers_router.message(User_reg.number)
 async def reg_name(message: Message, state: FSMContext):
     await set_user(message.from_user.id, message.contact.phone_number, message.from_user.username)
-    await message.answer(f'Команды: \n/start Команда приветствия ( более ничем не полезна \n/help список всех доступных команд \n/new Создать задачу о Задач ( только для доверенных пользователей)\n/dz Посмотреть задачи Задач по дням \n/all Показывает весё заданное домашнее задание\n\n\n/menu команда для выхода в главное меню и навигиции при момощи кнопок', reply_markup=kb.menu)
+    await message.answer(f'Команды: \n/start Команда приветствия ( более ничем не полезна \n/help список всех доступных команд \n/new Создать задачу о Задач ( только для доверенных пользователей)\n/tasks Посмотреть задачи Задач по дням \n/all Показывает весё заданное домашнее задание\n\n\n/menu команда для выхода в главное меню и навигиции при момощи кнопок', reply_markup=kb.menu)
     await state.clear()
     
 
 @handlers_router.message(Command('help'))
 async def cmd_help(message: Message):
-    await message.answer(f'Команды: \n/start Команда приветствия ( более ничем не полезна \n/help список всех доступных команд \n/new Создать задачу о Задач ( только для доверенных пользователей)\n/dz Посмотреть задачи Задач по дням \n/all Показывает весё заданное домашнее задание\n\n\n/menu команда для выхода в главное меню и навигиции при момощи кнопок', reply_markup=kb.menu)
+    await message.answer(f'Команды: \n/start Команда приветствия ( более ничем не полезна \n/help список всех доступных команд \n/new Создать задачу о Задач ( только для доверенных пользователей)\n/tasks Посмотреть задачи Задач по дням \n/all Показывает весё заданное домашнее задание\n\n\n/menu команда для выхода в главное меню и навигиции при момощи кнопок', reply_markup=kb.menu)
     
 @handlers_router.message(Command('menu'))
 async def cmd_menu(message: Message, state: FSMContext):

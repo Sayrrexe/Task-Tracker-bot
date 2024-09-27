@@ -16,13 +16,13 @@ class show_lessons(StatesGroup):
 class all_spam_class(StatesGroup):
     text = State()
     
-class Create_Dz_fsm(StatesGroup):
+class Create_tasks_fsm(StatesGroup):
     Ritem = State()
     date = State()
     mounth = State()
     text = State()
     
-class Show_Dz(StatesGroup):
+class Show_tasks(StatesGroup):
     lesson = State()
 
   
