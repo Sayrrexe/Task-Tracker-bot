@@ -2,20 +2,21 @@
  
 ## Инструмент для создания и отслеживания задач группой лиц интегрированный в удобный телеграм бот
 
-# Как начать?
+### Как начать?
 1. Скачать репозиторий 
 	```
 	git clone https://github.com/Sayrrexe/Task-Tracker-bot.git
 	```
 2. Создать Виртуальное окружение и скачать нужные библиотеки
-	Для Windows:
-		```
+		```	
+		# Windows
 		python -m venv .venv
 		.venv/Scripts/activate
 		pip install -r requirements.txt
 		```
-	Для linux: 
+
 		```
+		# Linux
 		python3 -m venv .venv
 		source .venv/bin/activate
 		pip3 install -r requirements.txt
