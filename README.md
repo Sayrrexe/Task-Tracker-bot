@@ -8,15 +8,13 @@
 	git clone https://github.com/Sayrrexe/Task-Tracker-bot.git
 	```
 2. Создать Виртуальное окружение и скачать нужные библиотеки
-
 		```	
 		# Windows
 		python -m venv .venv
 		.venv/Scripts/activate
 		pip install -r requirements.txt
-		```
+		
 
-		```
 		# Linux
 		python3 -m venv .venv
 		source .venv/bin/activate
