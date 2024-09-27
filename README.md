@@ -22,8 +22,10 @@
 		pip3 install -r requirements.txt
 		
 3. Настроить файл Config.py
+
 	добавьте в файл telegram-bot-api вашего бота
 	добавьте в файл tg-id пользователей
+
 4. Запустите 
 	```
 	python run.py
