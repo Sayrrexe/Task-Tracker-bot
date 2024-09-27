@@ -9,22 +9,23 @@
 	```
 2. Создать Виртуальное окружение и скачать нужные библиотеки
 
-		
-		# Windows
-		python -m venv .venv
-		.venv/Scripts/activate
-		pip install -r requirements.txt
-		
-
-		# Linux
-		python3 -m venv .venv
-		source .venv/bin/activate
-		pip3 install -r requirements.txt
-		
+	```	
+	# Windows
+	python -m venv .venv
+	.venv/Scripts/activate
+	pip install -r requirements.txt
+	```
+	
+	```
+	# Linux
+	python3 -m venv .venv
+	source .venv/bin/activate
+	pip3 install -r requirements.txt
+	```	
 3. Настроить файл Config.py
 
-	добавьте в файл telegram-bot-api вашего бота
-	добавьте в файл tg-id пользователей
+		добавьте в файл telegram-bot-api вашего бота
+		добавьте в файл tg-id пользователей
 
 4. Запустите 
 	```
